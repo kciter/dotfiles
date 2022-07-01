@@ -49,5 +49,5 @@ cask "linear-linear"
 mas 'Bear', id: 1091189122
 mas 'Spark', id: 1176895641
 mas 'Kakaotalk', id: 869223134
-mas 'Memory Diag', id: 748212890
 mas 'Tailscale', id: 1475387142
+mas 'RunCat', id: 1429033973 
