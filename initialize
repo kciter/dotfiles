@@ -32,3 +32,8 @@ curl -LfsS https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integrati
 # Install SDKMAN
 curl -s "https://get.sdkman.io" | zsh
 source "/Users/kciter/.sdkman/bin/sdkman-init.sh"
+
+# Git config
+git config --global user.email "kciter@naver.com"
+git config --global user.name "Lee Sun-Hyoup"
+
