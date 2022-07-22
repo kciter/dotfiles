@@ -1,7 +1,6 @@
 tap "homebrew/cask"
 
 brew "git"
-brew "node"
 brew "yarn"
 brew "wifi-password"
 brew "fasd"
@@ -16,6 +15,7 @@ brew "python3"
 brew "mas"
 brew "ffmpeg"
 brew "tailscale"
+brew "nvm"
 
 cask "docker"
 cask "iterm2"
