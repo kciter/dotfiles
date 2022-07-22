@@ -14,7 +14,7 @@ fi
 
 brew update
 brew tap homebrew/bundle
-brew bundle --file $HOME/.dotfiles/Brewfile
+brew bundle --file $HOME/dotfiles/Brewfile
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k > /dev/null 2>&1
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting > /dev/null 2>&1
@@ -22,9 +22,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions > /dev/null 2>&1
 
 rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc > /dev/null 2>&1
-ln -s $HOME/.dotfiles/.p10k.zsh $HOME/.p10k.zsh > /dev/null 2>&1
-ln -s $HOME/.dotfiles/.vimrc $HOME/.vimrc > /dev/null 2>&1
+ln -s $HOME/dotfiles/.zshrc $HOME/.zshrc > /dev/null 2>&1
+ln -s $HOME/dotfiles/.p10k.zsh $HOME/.p10k.zsh > /dev/null 2>&1
+ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc > /dev/null 2>&1
 
 #  iterm2
 curl -LfsS https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh
