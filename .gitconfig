@@ -1,0 +1,9 @@
+[user]
+name = Lee Sun-Hyoup
+email = kciter@naver.com
+[pull]
+rebase = false
+[init]
+defaultBranch = main
+[push]
+autoSetupRemote = true
