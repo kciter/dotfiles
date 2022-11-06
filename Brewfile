@@ -51,3 +51,4 @@ mas 'Spark', id: 1176895641
 mas 'Kakaotalk', id: 869223134
 mas 'Tailscale', id: 1475387142
 mas 'RunCat', id: 1429033973 
+mas 'Ulysses', id: 1225570693 
