@@ -14,8 +14,7 @@ brew "jq"
 brew "python3"
 brew "mas"
 brew "ffmpeg"
-brew "tailscale"
-brew "nvm"
+brew "mise"
 
 cask "docker"
 cask "iterm2"
@@ -49,6 +48,5 @@ cask "linear-linear"
 mas 'Bear', id: 1091189122
 mas 'Spark', id: 1176895641
 mas 'Kakaotalk', id: 869223134
-mas 'Tailscale', id: 1475387142
 mas 'RunCat', id: 1429033973 
 mas 'Ulysses', id: 1225570693 
