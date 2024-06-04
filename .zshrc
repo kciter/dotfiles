@@ -118,12 +118,28 @@ source $ZSH/oh-my-zsh.sh
 # direnv
 eval "$(direnv hook zsh)"
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[[ -s "/opt/homebrew/opt/nvm/nvm.sh" ]] && source "/opt/homebrew/opt/nvm/nvm.sh"
-
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/kciter/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/kciter/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/kciter/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/kciter/google-cloud-sdk/completion.zsh.inc'; fi
+
+if [ "$(arch)" = "arm64" ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+    eval "$(/usr/local/bin/brew shellenv)"
+fi
+
+# add Pulumi to the PATH
+export PATH=$PATH:$HOME/.pulumi/bin
+
+[ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
+# pnpm
+export PNPM_HOME="/Users/kciter/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
