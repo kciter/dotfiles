@@ -11,6 +11,7 @@ brew "python3"
 brew "mas"
 brew "ffmpeg"
 brew "mise"
+brew "zoxide"
 
 cask "slack"
 cask "notion"
