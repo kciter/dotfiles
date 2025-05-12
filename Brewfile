@@ -12,6 +12,7 @@ brew "mas"
 brew "ffmpeg"
 brew "mise"
 brew "zoxide"
+brew "awscli"
 
 cask "slack"
 cask "notion"
