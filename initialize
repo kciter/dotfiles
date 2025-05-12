@@ -28,14 +28,7 @@ ln -s $HOME/dotfiles/.zshrc $HOME/.zshrc > /dev/null 2>&1
 ln -s $HOME/dotfiles/.p10k.zsh $HOME/.p10k.zsh > /dev/null 2>&1
 ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc > /dev/null 2>&1
 
-#  iterm2
-curl -LfsS https://iterm2.com/shell_integration/zsh -o ~/.iterm2_shell_integration.zsh
-
-# Install SDKMAN
-curl -s "https://get.sdkman.io" | zsh
-source "/Users/kciter/.sdkman/bin/sdkman-init.sh"
-
 # Git config
 git config --global user.email "kciter@naver.com"
-git config --global user.name "Lee Sun-Hyoup"
+git config --global user.name "Sunhyoup Lee"
 
