@@ -36,9 +36,11 @@ cask "raycast"
 cask "linear-linear"
 cask "claude"
 cask "chatgpt"
+cask "orbstack"
 
 mas 'Bear', id: 1091189122
 mas 'Spark', id: 1176895641
 mas 'Kakaotalk', id: 869223134
 mas 'RunCat', id: 1429033973 
 mas 'Ulysses', id: 1225570693 
+mas 'Things 3', id: 904280696
