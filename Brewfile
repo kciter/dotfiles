@@ -33,6 +33,8 @@ cask "medis"
 cask "bartender"
 cask "raycast"
 cask "linear-linear"
+cask "claude"
+cask "chatgpt"
 
 mas 'Bear', id: 1091189122
 mas 'Spark', id: 1176895641

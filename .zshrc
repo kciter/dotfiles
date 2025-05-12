@@ -145,3 +145,4 @@ esac
 # pnpm end
 
 eval "$(mise activate zsh --shims)"
+eval "$(zoxide init zsh)"
